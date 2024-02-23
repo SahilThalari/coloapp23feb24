@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title> Min Finder.. </title>
+		<style>
+			* {font-size:40px; font-family:Times New Roman;}
+		</style>
+
+		<script>
+			function compute()
+			{
+				event.preventDefault()
+				let action = document.activeElement.value;
+
+				switch(action)
+				{
+					case "Red":
+								document.body.style.background="red";
+								break;
+				
+					case "Green":
+								document.body.style.background="green";
+								break;
+							
+
+					case "Blue":
+								document.body.style.background="blue";
+								break;
+								
+				}	
+			}
+			
+		</script>
+	</head>
+
+	<body>
+	<center>
+		<h1> Min Finder....</h1>
+		<form onsubmit="compute()">
+			<input type="submit" value="Red" class="btn">
+			<input type="submit" value="Green" class="btn">
+			<input type="submit" value="Blue" class="btn">
+		
+		</form>
+		<h2 id="msg"/>
+	</center>
+	</body>
+</html>
